@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-type": "^1.1.1",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.3.2"
   }
 }
