@@ -15,3 +15,19 @@ export interface Post {
     update_time:string,
     update:boolean
 }
+
+export interface Like {
+    id?:number,
+    user_id:number,
+    post_id:number
+}
+
+export interface Comment {
+    id?:number,
+    user_id:number,
+    post_id:number,
+    body:string,
+    create_time:string,
+    update_time:string,
+    update:boolean
+}
