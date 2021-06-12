@@ -18,13 +18,13 @@ app.use(express.json());
 
 // OS
 
-import { users } from './database/users';
-import { User } from './database/interface';
+import { post } from './database/post';
+import { Post } from './database/interface';
 
 app.get('/test', async(req: express.Request, res: express.Response) => {
-    let user: any = new users();
-    let Account: User = {id: 1, email: 'test1', name: 'test2', password: 'test4'};
-    let result: string = await user.deleteUser(Account);
+    let posts: any = new post();
+    let Account: Post = {id: 1, user_id: 1, title: '1', image: 'https://i.imgur.com/rVvX6E6.png', body: '3', create_time: '1999-01-08 04:05:06', update_time: '1999-01-08 04:05:06', update: false};
+    let result: string = await posts.updatePost(Account);
     console.log(result);
     res.send('ok!');
 });

@@ -5,3 +5,13 @@ export interface User {
     email?:string
 }
 
+export interface Post {
+    id?:number,
+    user_id?:number,
+    title:string,
+    image:string,
+    body:string,
+    create_time:string,
+    update_time:string,
+    update:boolean
+}
